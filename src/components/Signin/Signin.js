@@ -28,7 +28,7 @@ class Signin extends React.Component {
     })
       .then(response => response.json())
       .then(user => {
-        if (user.id) {
+        if (user.id) { //check if user has an existing ID
           this.props.loadUser(user)
           this.props.onRouteChange('home');
         }
@@ -38,10 +38,10 @@ class Signin extends React.Component {
   render() {
     const { onRouteChange } = this.props;
     return (
-      <article className="br3 ba b--black-10 mv4 w-100 w-50-m w-25-l mw6 shadow-5 center">
+      <article style={{backgroundColor: 'white'}} className="br3 ba b--black-100 mv4 w-100 w-50-m w-25-l mw6 shadow-5 center ">
         <main className="pa4 black-80">
           <div className="measure">
-            <fieldset id="sign_up" className="ba b--transparent ph0 mh0">
+            <fieldset id="sign_up" className="ba b--transparent ph0 mh0" >
               <legend className="f1 fw6 ph0 mh0">Sign In</legend>
               <div className="mt3">
                 <label className="db fw6 lh-copy f6" htmlFor="email-address">Email</label>
@@ -67,7 +67,7 @@ class Signin extends React.Component {
             <div className="">
               <input
                 onClick={this.onSubmitSignIn}
-                className="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib"
+                className="b ph3 pv2 input-reset ba b--black bg-black grow pointer f6 dib"
                 type="submit"
                 value="Sign in"
               />
