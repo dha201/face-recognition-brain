@@ -11,7 +11,7 @@
 <!-- Live Demo Link -->
 <div align="center">
 <a href="https://face-recognition-brain-ef77df87c18e.herokuapp.com/" target='_blank'>
-    click here for live demo
+    click here for a live demo
 </a>
 <p>
 
@@ -36,7 +36,7 @@ The tech stack demonstrates the use of React, Node, PostgreSQL, and external API
 
 ### :camera: A demo of the Web App
 <p align="center">
-<img src="face_demo.png" ">
+<img src="face demo.png" ">
 </p>
 
 ## :key: Features
